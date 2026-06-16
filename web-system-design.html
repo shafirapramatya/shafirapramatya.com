@@ -12,7 +12,7 @@
             theme: {
                 extend: {
                     fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'], display: ['Space Grotesk', 'sans-serif'] },
-                    colors: { dustgrey: '#CFDBD5', ivory: '#E8EDDF', tuscansun: '#F5CB5C', shadowgrey: '#242423', graphite: '#333533', purewhite: '#FFFFFF' }
+                    colors: { dustgrey: '#CFDBD5', ivory: '#E8EDDF', tuscansun: '#F5CB5C', shadowgrey: '#242423', graphite: '#333533', purewhite: '#FFFFFF', maroon: '#800000' }
                 }
             }
         }
@@ -39,55 +39,148 @@
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 py-16 space-y-16">
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-20">
+
         <!-- MODULE 1: Design Thinking & Innovation (DTI) -->
-        <section class="grid md:grid-cols-12 gap-8 items-start border-b border-dustgrey/40 pb-12">
-            <div class="md:col-span-5 space-y-4">
-                <div class="inline-flex bg-ivory text-graphite font-mono text-[10px] font-extrabold px-2 py-0.5 rounded border border-dustgrey/60 uppercase">Design Thinking & Innovation (DTI)</div>
-                <h2 class="font-serif text-2xl md:text-3xl font-bold text-shadowgrey">User Experience Engineering & Problem Validation</h2>
-                <p class="text-xs text-graphite leading-relaxed">Articulates product scoping strategies, validated target user segment frameworks, primary capability maps, complete structural User Flow blueprints, and mock prototype maps.</p>
-                <div class="pt-2 flex flex-col sm:flex-row gap-3">
-                    <a href="https://drive.google.com/file/d/1XfPil0AYQWoCH3vuK5EnN8XfJnnDz2FO/view?usp=drive_link" target="_blank" class="text-center bg-shadowgrey hover:bg-graphite text-purewhite text-xs font-bold uppercase tracking-wider px-4 py-3 rounded transition-all flex items-center justify-center gap-2"><i class="fa-solid fa-file-pdf text-tuscansun"></i> Open DTI Report</a>
-                    <a href="https://drive.google.com/file/d/1pNpU7mVMYE9Sd7U4sLOeZ0Wh97DYROLn/view?usp=drive_link" target="_blank" class="text-center border border-dustgrey bg-purewhite text-graphite hover:bg-ivory/20 text-xs font-bold uppercase tracking-wider px-4 py-3 rounded transition-all flex items-center justify-center gap-2"><i class="fa-solid fa-image"></i> View User Flow Diagram</a>
+        <section class="space-y-10 border-b border-dustgrey/40 pb-16">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-5 space-y-4">
+                    <div class="inline-flex bg-ivory text-graphite font-mono text-[10px] font-extrabold px-2 py-0.5 rounded border border-dustgrey/60 uppercase">Design Thinking & Innovation (DTI)</div>
+                    <h2 class="font-serif text-2xl md:text-3xl font-bold text-shadowgrey">User Experience Engineering & Problem Validation</h2>
+                    <p class="text-xs text-graphite leading-relaxed">Articulates product scoping strategies, validated target user segment frameworks, primary capability maps, complete structural User Flow blueprints, and mock prototype maps.</p>
+                    <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                        <a href="https://drive.google.com/file/d/1XfPil0AYQWoCH3vuK5EnN8XfJnnDz2FO/view?usp=drive_link" target="_blank" class="text-center bg-shadowgrey hover:bg-graphite text-purewhite text-xs font-bold uppercase tracking-wider px-4 py-3 rounded transition-all flex items-center justify-center gap-2"><i class="fa-solid fa-file-pdf text-tuscansun"></i> Open DTI Report</a>
+                        <a href="https://drive.google.com/file/d/1pNpU7mVMYE9Sd7U4sLOeZ0Wh97DYROLn/view?usp=drive_link" target="_blank" class="text-center border border-dustgrey bg-purewhite text-graphite hover:bg-ivory/20 text-xs font-bold uppercase tracking-wider px-4 py-3 rounded transition-all flex items-center justify-center gap-2"><i class="fa-solid fa-image"></i> View User Flow Diagram</a>
+                    </div>
+                </div>
+                <div class="md:col-span-7 bg-graphite p-6 rounded-xl text-purewhite space-y-4 border border-dustgrey/20">
+                    <h4 class="font-bold text-tuscansun uppercase text-[10px] tracking-widest font-display">Core DTI Project Pillars:</h4>
+                    <ul class="list-disc pl-5 text-xs text-ivory/80 space-y-2.5">
+                        <li><strong>Problem Framing:</strong> Mapping real-world cultural SME blockages and structural micro-tour operator validation mechanics.</li>
+                        <li><strong>User Persona Validation:</strong> Segmenting core behaviors of international cultural tourists alongside local community workshop demands.</li>
+                        <li><strong>Interactive Canvas:</strong> Tested ideation matrices formulated directly for global pitch competitive reviews.</li>
+                    </ul>
                 </div>
             </div>
-            <div class="md:col-span-7 bg-graphite p-6 rounded-xl text-purewhite space-y-4 border border-dustgrey/20">
-                <h4 class="font-bold text-tuscansun uppercase text-[10px] tracking-widest font-display">Core DTI Project Pillars:</h4>
-                <ul class="list-disc pl-5 text-xs text-ivory/80 space-y-2.5">
-                    <li><strong>Problem Framing:</strong> Mapping real-world cultural SME blockages and structural micro-tour operator validation mechanics.</li>
-                    <li><strong>User Persona Validation:</strong> Segmenting core behaviors of international cultural tourists alongside local community workshop demands.</li>
-                    <li><strong>Interactive Canvas:</strong> Tested ideation matrices formulated directly for global pitch competitive reviews.</li>
-                </ul>
+
+            <!-- User Segments + Mockup Gallery -->
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-4 space-y-4">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-shadowgrey">Validated User Segments</h3>
+                    <p class="text-[11px] text-graphite leading-relaxed">A quantitative and qualitative survey via Google Forms grouped target users into four segments, each with distinct needs the platform's information architecture had to serve.</p>
+                    <div class="space-y-2.5">
+                        <div class="flex items-center gap-3 p-3 rounded-lg border border-dustgrey bg-purewhite">
+                            <div class="w-8 h-8 rounded-full bg-ivory flex items-center justify-center text-graphite text-xs shrink-0"><i class="fa-solid fa-house-user"></i></div>
+                            <div><span class="text-xs font-bold text-shadowgrey">Locals</span><p class="text-[10px] text-graphite">Seeking accessible cultural learning near home</p></div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-lg border border-dustgrey bg-purewhite">
+                            <div class="w-8 h-8 rounded-full bg-ivory flex items-center justify-center text-graphite text-xs shrink-0"><i class="fa-solid fa-chalkboard-user"></i></div>
+                            <div><span class="text-xs font-bold text-shadowgrey">Educators</span><p class="text-[10px] text-graphite">Need structured cultural curricula to teach from</p></div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-lg border border-dustgrey bg-purewhite">
+                            <div class="w-8 h-8 rounded-full bg-ivory flex items-center justify-center text-graphite text-xs shrink-0"><i class="fa-solid fa-earth-asia"></i></div>
+                            <div><span class="text-xs font-bold text-shadowgrey">Expats / Travelers</span><p class="text-[10px] text-graphite">Want authenticated, localized cultural tour guides</p></div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-lg border border-dustgrey bg-purewhite">
+                            <div class="w-8 h-8 rounded-full bg-ivory flex items-center justify-center text-graphite text-xs shrink-0"><i class="fa-solid fa-store"></i></div>
+                            <div><span class="text-xs font-bold text-shadowgrey">Cultural SMEs</span><p class="text-[10px] text-graphite">Lack exposure to market goods beyond local circles</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-8 space-y-3">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-shadowgrey">High-Fidelity Figma Mockups</h3>
+                        <span class="text-[10px] font-mono text-graphite bg-ivory border border-dustgrey/60 px-2 py-0.5 rounded">Palette: <span class="inline-block w-2.5 h-2.5 rounded-full bg-maroon align-middle ml-1"></span> #800000 Maroon</span>
+                    </div>
+                    <p class="text-[11px] text-graphite leading-relaxed">Low-fidelity wireframes evolved into interactive high-fidelity screens covering the four core flows: discovery, courses, artisan marketplace, and tours & events.</p>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        <div class="group">
+                            <div class="aspect-[9/16] rounded-lg overflow-hidden border border-dustgrey shadow-sm">
+                                <img src="https://lh3.googleusercontent.com/d/10mNU-kI7zjEfH9C0g0v5Zp2CpbxuurCw" alt="Arthayana Home Portal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <span class="text-[10px] font-bold text-graphite mt-1.5 block text-center">Home Portal</span>
+                        </div>
+                        <div class="group">
+                            <div class="aspect-[9/16] rounded-lg overflow-hidden border border-dustgrey shadow-sm">
+                                <img src="https://lh3.googleusercontent.com/d/1CYkR_5a0dY72GgM6a4gBz1Yn76bVO9SA" alt="Arthayana Cultural Courses" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <span class="text-[10px] font-bold text-graphite mt-1.5 block text-center">Cultural Courses</span>
+                        </div>
+                        <div class="group">
+                            <div class="aspect-[9/16] rounded-lg overflow-hidden border border-dustgrey shadow-sm">
+                                <img src="https://lh3.googleusercontent.com/d/1Fx0qf_-wLX2EDby7uDLstAny4AHqbwXP" alt="Arthayana Shop & DIY Kits" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <span class="text-[10px] font-bold text-graphite mt-1.5 block text-center">SME Marketplace</span>
+                        </div>
+                        <div class="group">
+                            <div class="aspect-[9/16] rounded-lg overflow-hidden border border-dustgrey shadow-sm">
+                                <img src="https://lh3.googleusercontent.com/d/1rJZiWhGgMtlmZA7hQajdBkz8zQ6sfYRM" alt="Arthayana Tours & Events" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <span class="text-[10px] font-bold text-graphite mt-1.5 block text-center">Tours & Events</span>
+                        </div>
+                    </div>
+                    <a href="https://www.figma.com/proto/qGH6awQQqIO4sXDjGMwkGC/Arthayana-Indonesia?node-id=271-693&p=f&t=R1dnTzeM8jacfiuE-0&scaling=min-zoom&content-scaling=fixed&page-id=61%3A82&starting-point-node-id=271%3A693" target="_blank" class="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-graphite hover:text-tuscansun transition-colors pt-1"><i class="fa-brands fa-figma"></i> Open Interactive Figma Prototype <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i></a>
+                </div>
             </div>
         </section>
 
         <!-- MODULE 2: Perancangan Basis Data (PBD) -->
-        <section class="grid md:grid-cols-12 gap-8 items-start">
-            <div class="md:col-span-5 space-y-4">
-                <div class="inline-flex bg-ivory text-graphite font-mono text-[10px] font-extrabold px-2 py-0.5 rounded border border-dustgrey/60 uppercase">Database Systems Engineering (PBD)</div>
-                <h2 class="font-serif text-2xl md:text-3xl font-bold text-shadowgrey">Relational Database Design & Normalization Schema</h2>
-                <p class="text-xs text-graphite leading-relaxed">Structured transactional model processing constraints for multi-merchant setups. Maps logical parameters across relational entities, detailing normalization logic up to 3NF alongside direct code assertions.</p>
-                <div class="pt-2 space-y-2">
-                    <a href="https://drive.google.com/file/d/19VrewxAqilykpIFGYp554yxOzZ9HbWo6/view?usp=drive_link" target="_blank" class="w-full text-center bg-shadowgrey hover:bg-graphite text-purewhite text-xs font-bold uppercase tracking-wider py-3 rounded transition-all flex items-center justify-center gap-2"><i class="fa-solid fa-file-invoice"></i> Open Complete PBD Report</a>
-                    <div class="grid grid-cols-2 gap-2 text-center text-xs font-bold uppercase tracking-wider">
-                        <a href="https://drive.google.com/file/d/1Zno7pTZa5jYISEWepua1YEqzK69hUGYY/view?usp=drive_link" target="_blank" class="border border-dustgrey py-2.5 rounded hover:bg-ivory/20 text-graphite transition-all">ER Table Specs</a>
-                        <a href="https://drive.google.com/file/d/14C-2JKinjrUejGgXzJD7BjDYEtbSdlLk/view?usp=drive_link" target="_blank" class="border border-dustgrey py-2.5 rounded hover:bg-ivory/20 text-graphite transition-all">Draw.io Diagram</a>
+        <section class="space-y-10">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-5 space-y-4">
+                    <div class="inline-flex bg-ivory text-graphite font-mono text-[10px] font-extrabold px-2 py-0.5 rounded border border-dustgrey/60 uppercase">Database Systems Engineering (PBD)</div>
+                    <h2 class="font-serif text-2xl md:text-3xl font-bold text-shadowgrey">Relational Database Design & Normalization Schema</h2>
+                    <p class="text-xs text-graphite leading-relaxed">Structured transactional model processing constraints for multi-merchant setups. Maps logical parameters across relational entities, detailing normalization logic up to 3NF alongside direct code assertions.</p>
+                    <div class="pt-2 space-y-2">
+                        <a href="https://drive.google.com/file/d/19VrewxAqilykpIFGYp554yxOzZ9HbWo6/view?usp=drive_link" target="_blank" class="w-full text-center bg-shadowgrey hover:bg-graphite text-purewhite text-xs font-bold uppercase tracking-wider py-3 rounded transition-all flex items-center justify-center gap-2"><i class="fa-solid fa-file-invoice"></i> Open Complete PBD Report</a>
+                        <div class="grid grid-cols-2 gap-2 text-center text-xs font-bold uppercase tracking-wider">
+                            <a href="https://drive.google.com/file/d/1Zno7pTZa5jYISEWepua1YEqzK69hUGYY/view?usp=drive_link" target="_blank" class="border border-dustgrey py-2.5 rounded hover:bg-ivory/20 text-graphite transition-all">ER Table Specs</a>
+                            <a href="https://drive.google.com/file/d/14C-2JKinjrUejGgXzJD7BjDYEtbSdlLk/view?usp=drive_link" target="_blank" class="border border-dustgrey py-2.5 rounded hover:bg-ivory/20 text-graphite transition-all">Draw.io Diagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-7 bg-graphite p-6 rounded-xl text-purewhite space-y-4 border border-dustgrey/20">
+                    <h4 class="font-bold text-tuscansun uppercase text-[10px] tracking-widest font-display">Database Execution Elements:</h4>
+                    <p class="text-xs text-ivory/80 leading-relaxed">Architected transaction structures engineered to seamlessly map split merchant ledger logic, automated account verification records, and persistent secure session tables without system redundancy flaws.</p>
+                    <div class="pt-2 border-t border-purewhite/10 text-xs font-mono text-ivory/90">
+                        <span class="text-tuscansun uppercase tracking-widest font-bold font-display block text-[10px] mb-2"><i class="fa-solid fa-video"></i> Video Explanations Covered:</span>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li><strong>DDL:</strong> Query syntax generating data constraints and logical tables.</li>
+                            <li><strong>DML:</strong> Data manipulation commands updating record entries.</li>
+                            <li><strong>DQL:</strong> Multi-join reporting scripts retrieving transaction histories.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="md:col-span-7 bg-graphite p-6 rounded-xl text-purewhite space-y-4 border border-dustgrey/20">
-                <h4 class="font-bold text-tuscansun uppercase text-[10px] tracking-widest font-display">Database Execution Elements:</h4>
-                <p class="text-xs text-ivory/80 leading-relaxed">Architected transaction structures engineered to seamlessly map split merchant ledger logic, automated account verification records, and persistent secure session tables without system redundancy flaws.</p>
-                <div class="pt-2 border-t border-purewhite/10 text-xs font-mono text-ivory/90">
-                    <span class="text-tuscansun uppercase tracking-widest font-bold font-display block text-[10px] mb-2"><i class="fa-solid fa-video"></i> Video Explanations Covered:</span>
-                    <ul class="list-disc pl-5 space-y-1">
-                        <li><strong>DDL:</strong> Query syntax generating data constraints and logical tables.</li>
-                        <li><strong>DML:</strong> Data manipulation commands updating record entries.</li>
-                        <li><strong>DQL:</strong> Multi-join reporting scripts retrieving transaction histories.</li>
-                    </ul>
+
+            <!-- ERD / Schema Visual Previews -->
+            <div class="space-y-4">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-shadowgrey">From Conceptual Model to Relational Schema</h3>
+                <p class="text-[11px] text-graphite leading-relaxed max-w-2xl">The entity-relationship model below was normalized into a 3NF relational schema spanning six core tables — USER, COURSE, ENROLLMENT, CULTURE, SME, and DIY_KIT — to support multi-merchant consignment and course-enrollment logic without redundancy.</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <div class="border border-dustgrey rounded-xl overflow-hidden bg-purewhite p-3">
+                            <img src="assets/img/erd-conceptual.png" alt="Arthayana Conceptual ERD Diagram" class="w-full h-auto rounded">
+                        </div>
+                        <div class="flex items-center justify-between px-1">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-graphite">01 — Conceptual ERD (Chen Notation)</span>
+                            <a href="https://drive.google.com/file/d/1Zno7pTZa5jYISEWepua1YEqzK69hUGYY/view?usp=drive_link" target="_blank" class="text-[10px] font-bold text-graphite hover:text-tuscansun transition-colors"><i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>Full Size</a>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="border border-dustgrey rounded-xl overflow-hidden bg-purewhite p-3">
+                            <img src="assets/img/erd-schema.png" alt="Arthayana Relational Schema Diagram" class="w-full h-auto rounded">
+                        </div>
+                        <div class="flex items-center justify-between px-1">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-graphite">02 — Normalized Relational Schema (3NF)</span>
+                            <a href="https://drive.google.com/file/d/14C-2JKinjrUejGgXzJD7BjDYEtbSdlLk/view?usp=drive_link" target="_blank" class="text-[10px] font-bold text-graphite hover:text-tuscansun transition-colors"><i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>Full Size</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer class="bg-shadowgrey text-purewhite py-8 text-center text-xs uppercase tracking-widest text-ivory/60">&copy; 2026 Shafira Pramatya • System Architecture Specs</footer>
