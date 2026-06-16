@@ -37,52 +37,168 @@
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 py-16 space-y-20">
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-24">
+
         <!-- REPORT 1: E-Commerce Business Profitability Analysis -->
-        <section class="grid md:grid-cols-12 gap-8 items-start border-b border-dustgrey/40 pb-16">
-            <div class="md:col-span-5 space-y-4">
-                <div class="w-12 h-12 rounded-xl bg-ivory flex items-center justify-center text-shadowgrey text-lg shadow-sm"><i class="fa-solid fa-chart-line"></i></div>
-                <h2 class="font-serif text-2xl md:text-3xl font-bold text-shadowgrey">E-Commerce Business Profitability Analysis</h2>
-                <p class="text-xs text-graphite leading-relaxed">Quantitative analytics project auditing profit distribution boundaries, checking item sales volume velocities, and processing granular operational logistics cost overheads.</p>
-                <div class="pt-2 flex flex-col sm:flex-row gap-3">
-                    <a href="https://colab.research.google.com/drive/1xMnb62XLWBj5Y5XrpLc9I9Iawab8TtlL" target="_blank" class="text-center bg-shadowgrey hover:bg-graphite text-purewhite text-xs font-bold uppercase tracking-wider px-4 py-3 rounded transition-all flex items-center justify-center gap-2"><i class="fa-brands fa-python text-tuscansun"></i> Google Colab Notebook</a>
-                    <a href="https://drive.google.com/file/d/1DDCFtkqbAHpxcttQ3o7XAbT8H-Msk_IT/view?usp=drive_link" target="_blank" class="text-center border border-dustgrey bg-purewhite text-graphite hover:bg-ivory/20 text-xs font-bold uppercase tracking-wider px-4 py-3 rounded transition-all flex items-center justify-center gap-2"><i class="fa-solid fa-file-pdf text-red-500"></i> Executive PDF Report</a>
+        <section class="space-y-10 border-b border-dustgrey/40 pb-20">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-5 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-ivory flex items-center justify-center text-shadowgrey text-lg shadow-sm"><i class="fa-solid fa-chart-line"></i></div>
+                    <h2 class="font-serif text-2xl md:text-3xl font-bold text-shadowgrey">E-Commerce Business Profitability Analysis</h2>
+                    <p class="text-xs text-graphite leading-relaxed">Quantitative analytics project auditing profit distribution boundaries, checking item sales volume velocities, and processing granular operational logistics cost overheads.</p>
+                    <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                        <a href="https://colab.research.google.com/drive/1xMnb62XLWBj5Y5XrpLc9I9Iawab8TtlL" target="_blank" class="text-center bg-shadowgrey hover:bg-graphite text-purewhite text-xs font-bold uppercase tracking-wider px-4 py-3 rounded transition-all flex items-center justify-center gap-2"><i class="fa-brands fa-python text-tuscansun"></i> Google Colab Notebook</a>
+                        <a href="https://drive.google.com/file/d/1DDCFtkqbAHpxcttQ3o7XAbT8H-Msk_IT/view?usp=drive_link" target="_blank" class="text-center border border-dustgrey bg-purewhite text-graphite hover:bg-ivory/20 text-xs font-bold uppercase tracking-wider px-4 py-3 rounded transition-all flex items-center justify-center gap-2"><i class="fa-solid fa-file-pdf text-red-500"></i> Executive PDF Report</a>
+                    </div>
+                </div>
+                <div class="md:col-span-7 bg-graphite p-6 rounded-xl text-purewhite space-y-3 border border-dustgrey/20">
+                    <div class="flex justify-between items-center border-b border-purewhite/10 pb-2 text-[10px] uppercase font-mono tracking-wider font-bold">
+                        <span class="text-tuscansun">Dataset Source: Kaggle Open Repository</span>
+                        <span class="text-dustgrey">Metrics Checked: Profit Margin, Item Cost</span>
+                    </div>
+                    <ul class="list-disc pl-5 text-xs text-ivory/80 space-y-2 font-sans leading-relaxed">
+                        <li><strong>Data Preprocessing:</strong> Handling heavy transaction records, managing incomplete records, and transforming structured frames utilizing Pandas and NumPy.</li>
+                        <li><strong>Granular Margin Metrics:</strong> Computing item-level gross return rates to segment profitable assets from dead storage product spaces wasting capital allocation.</li>
+                    </ul>
                 </div>
             </div>
-            <div class="md:col-span-7 bg-graphite p-6 rounded-xl text-purewhite space-y-3 border border-dustgrey/20">
-                <div class="flex justify-between items-center border-b border-purewhite/10 pb-2 text-[10px] uppercase font-mono tracking-wider font-bold">
-                    <span class="text-tuscansun">Dataset Source: Kaggle Open Repository</span>
-                    <span class="text-dustgrey">Metrics Checked: Profit Margin, Item Cost</span>
+
+            <!-- Stat Strip -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 rounded-lg border border-dustgrey bg-purewhite text-center">
+                    <span class="block font-display text-2xl font-bold text-shadowgrey">3,500+</span>
+                    <span class="text-[9px] text-graphite font-bold uppercase tracking-wider">Transaction Rows</span>
                 </div>
-                <ul class="list-disc pl-5 text-xs text-ivory/80 space-y-2 font-sans leading-relaxed">
-                    <li><strong>Data Preprocessing:</strong> Handling heavy transaction records, managing incomplete records, and transforming structured frames utilizing Pandas and NumPy.</li>
-                    <li><strong>Granular Margin Metrics:</strong> Computing item-level gross return rates to segment profitable assets from dead storage product spaces wasting capital allocation.</li>
-                </ul>
+                <div class="p-4 rounded-lg border border-dustgrey bg-purewhite text-center">
+                    <span class="block font-display text-2xl font-bold text-shadowgrey">Pandas</span>
+                    <span class="text-[9px] text-graphite font-bold uppercase tracking-wider">+ NumPy Cleaning</span>
+                </div>
+                <div class="p-4 rounded-lg border border-dustgrey bg-purewhite text-center">
+                    <span class="block font-display text-2xl font-bold text-shadowgrey">Matplotlib</span>
+                    <span class="text-[9px] text-graphite font-bold uppercase tracking-wider">+ Seaborn Visuals</span>
+                </div>
+                <div class="p-4 rounded-lg border border-dustgrey bg-purewhite text-center">
+                    <span class="block font-display text-2xl font-bold text-shadowgrey">Multi-Region</span>
+                    <span class="text-[9px] text-graphite font-bold uppercase tracking-wider">Seasonal Mapping</span>
+                </div>
+            </div>
+
+            <!-- Challenge / Approach / Questions -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-5">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-shadowgrey mb-1.5"><i class="fa-solid fa-bullseye text-tuscansun mr-1.5"></i>The Challenge</h4>
+                        <p class="text-[11px] text-graphite leading-relaxed">E-commerce environments generate massive arrays of transactional records, but identifying granular financial leakages and specific product-category drivers requires multi-dimensional filtering across price, cost, and region.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-shadowgrey mb-1.5"><i class="fa-solid fa-gears text-tuscansun mr-1.5"></i>The Approach</h4>
+                        <p class="text-[11px] text-graphite leading-relaxed">Engineered data-mining operations inside Google Colab to clean, filter, and transform over 3,500 rows of transactional metrics, then constructed financial tracking equations to compute return margins and generate comparative charts of regional and seasonal trends.</p>
+                    </div>
+                </div>
+                <div class="bg-ivory/30 border border-dustgrey/60 rounded-xl p-5 space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-shadowgrey"><i class="fa-solid fa-circle-question text-tuscansun mr-1.5"></i>Key Questions This Analysis Answers</h4>
+                    <ul class="space-y-2 text-[11px] text-graphite">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-tuscansun mt-0.5 shrink-0"></i><span>Which product categories drive the highest profit margins versus which sit as dead stock?</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-tuscansun mt-0.5 shrink-0"></i><span>How do operational logistics costs erode net returns on a per-item basis?</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-tuscansun mt-0.5 shrink-0"></i><span>Where do seasonal volume spikes create inventory restocking risk?</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-tuscansun mt-0.5 shrink-0"></i><span>Which regions deliver the strongest profitability-to-cost ratio for resource allocation?</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Outcome -->
+            <div class="bg-shadowgrey text-purewhite rounded-xl p-6 flex items-start gap-4">
+                <i class="fa-solid fa-flag-checkered text-tuscansun text-xl mt-0.5"></i>
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-tuscansun mb-1">The Outcome</h4>
+                    <p class="text-[11px] text-ivory/80 leading-relaxed">A formalized corporate-level evaluation report delivering precise, data-driven recommendations on product inventory restructuring and regional resource distribution — open the executive PDF for the full breakdown of charts and figures.</p>
+                </div>
             </div>
         </section>
 
         <!-- REPORT 2: Global Well-Being and Institutional Integrity Report -->
-        <section class="grid md:grid-cols-12 gap-8 items-start">
-            <div class="md:col-span-5 space-y-4">
-                <div class="w-12 h-12 rounded-xl bg-ivory flex items-center justify-center text-shadowgrey text-lg shadow-sm"><i class="fa-solid fa-globe"></i></div>
-                <h2 class="font-serif text-2xl md:text-3xl font-bold text-shadowgrey">Global Well-Being & Institutional Integrity Report</h2>
-                <p class="text-xs text-graphite leading-relaxed">Evaluates time-series correlations checking how macro institutional transparency metrics and Corruption Perception Index (CPI) trends alter societal life evaluations (World Happiness Index scores).</p>
-                <div class="pt-2 flex flex-col sm:flex-row gap-3">
-                    <a href="https://colab.research.google.com/drive/16v52sGDg0XtjrxoTXCFTtBze56ALt_1g?usp=drive_link" target="_blank" class="text-center bg-shadowgrey hover:bg-graphite text-purewhite text-xs font-bold uppercase tracking-wider px-4 py-3 rounded transition-all flex items-center justify-center gap-2"><i class="fa-brands fa-python text-tuscansun"></i> Google Colab Notebook</a>
-                    <a href="https://drive.google.com/file/d/1rVNE6FVnVKaz_WDMsfElIS0J4dyan1KO/view?usp=drive_link" target="_blank" class="text-center border border-dustgrey bg-purewhite text-graphite hover:bg-ivory/20 text-xs font-bold uppercase tracking-wider px-4 py-3 rounded transition-all flex items-center justify-center gap-2"><i class="fa-solid fa-file-pdf text-red-500"></i> Executive PDF Report</a>
+        <section class="space-y-10">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-5 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-ivory flex items-center justify-center text-shadowgrey text-lg shadow-sm"><i class="fa-solid fa-globe"></i></div>
+                    <h2 class="font-serif text-2xl md:text-3xl font-bold text-shadowgrey">Global Well-Being & Institutional Integrity Report</h2>
+                    <p class="text-xs text-graphite leading-relaxed">Evaluates time-series correlations checking how macro institutional transparency metrics and Corruption Perception Index (CPI) trends alter societal life evaluations (World Happiness Index scores).</p>
+                    <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                        <a href="https://colab.research.google.com/drive/16v52sGDg0XtjrxoTXCFTtBze56ALt_1g?usp=drive_link" target="_blank" class="text-center bg-shadowgrey hover:bg-graphite text-purewhite text-xs font-bold uppercase tracking-wider px-4 py-3 rounded transition-all flex items-center justify-center gap-2"><i class="fa-brands fa-python text-tuscansun"></i> Google Colab Notebook</a>
+                        <a href="https://drive.google.com/file/d/1rVNE6FVnVKaz_WDMsfElIS0J4dyan1KO/view?usp=drive_link" target="_blank" class="text-center border border-dustgrey bg-purewhite text-graphite hover:bg-ivory/20 text-xs font-bold uppercase tracking-wider px-4 py-3 rounded transition-all flex items-center justify-center gap-2"><i class="fa-solid fa-file-pdf text-red-500"></i> Executive PDF Report</a>
+                    </div>
+                </div>
+                <div class="md:col-span-7 bg-graphite p-6 rounded-xl text-purewhite space-y-3 border border-dustgrey/20">
+                    <div class="flex justify-between items-center border-b border-purewhite/10 pb-2 text-[10px] uppercase font-mono tracking-wider font-bold">
+                        <span class="text-tuscansun">Time-Series Range: 2015-2020 Analytics</span>
+                        <span class="text-dustgrey">Focus Area: Mental Health & Integrity</span>
+                    </div>
+                    <ul class="list-disc pl-5 text-xs text-ivory/80 space-y-2 font-sans leading-relaxed">
+                        <li><strong>Cross-Database Analytics:</strong> Linking global UN wellness scoring sheets with institutional accountability databases to produce regression plots and linear distributions.</li>
+                        <li><strong>Scalable Data Pipelines:</strong> Scripts written modularly to seamlessly digest new annual variables without breaking data normalization bounds.</li>
+                    </ul>
                 </div>
             </div>
-            <div class="md:col-span-7 bg-graphite p-6 rounded-xl text-purewhite space-y-3 border border-dustgrey/20">
-                <div class="flex justify-between items-center border-b border-purewhite/10 pb-2 text-[10px] uppercase font-mono tracking-wider font-bold">
-                    <span class="text-tuscansun">Time-Series Range: 2015-2020 Analytics</span>
-                    <span class="text-dustgrey">Focus Area: Mental Health & Integrity</span>
+
+            <!-- Stat Strip -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 rounded-lg border border-dustgrey bg-purewhite text-center">
+                    <span class="block font-display text-2xl font-bold text-shadowgrey">2015–2020</span>
+                    <span class="text-[9px] text-graphite font-bold uppercase tracking-wider">Time-Series Range</span>
                 </div>
-                <ul class="list-disc pl-5 text-xs text-ivory/80 space-y-2 font-sans leading-relaxed">
-                    <li><strong>Cross-Database Analytics:</strong> Linking global UN wellness scoring sheets with institutional accountability databases to produce regression plots and linear distributions.</li>
-                    <li><strong>Scalable Data Pipelines:</strong> Scripts written modularly to seamlessly digest new annual variables without breaking data normalization bounds.</li>
-                </ul>
+                <div class="p-4 rounded-lg border border-dustgrey bg-purewhite text-center">
+                    <span class="block font-display text-2xl font-bold text-shadowgrey">2 Indices</span>
+                    <span class="text-[9px] text-graphite font-bold uppercase tracking-wider">WHR + CPI Merged</span>
+                </div>
+                <div class="p-4 rounded-lg border border-dustgrey bg-purewhite text-center">
+                    <span class="block font-display text-2xl font-bold text-shadowgrey">Cross-Continental</span>
+                    <span class="text-[9px] text-graphite font-bold uppercase tracking-wider">Country Coverage</span>
+                </div>
+                <div class="p-4 rounded-lg border border-dustgrey bg-purewhite text-center">
+                    <span class="block font-display text-2xl font-bold text-shadowgrey">Correlation</span>
+                    <span class="text-[9px] text-graphite font-bold uppercase tracking-wider">Matrix + Regression</span>
+                </div>
+            </div>
+
+            <!-- Challenge / Approach / Questions -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-5">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-shadowgrey mb-1.5"><i class="fa-solid fa-bullseye text-tuscansun mr-1.5"></i>The Challenge</h4>
+                        <p class="text-[11px] text-graphite leading-relaxed">National financial sustainability is profoundly intertwined with public mental health, environmental wellness, and institutional governance — but un-integrated datasets mask these critical correlations from policymakers.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-shadowgrey mb-1.5"><i class="fa-solid fa-gears text-tuscansun mr-1.5"></i>The Approach</h4>
+                        <p class="text-[11px] text-graphite leading-relaxed">Consolidated and mapped macro-historical datasets from the World Happiness Report and Corruption Perceptions Index in Python, conducting exploratory data analysis, correlation matrix mappings, and multi-variable evaluations across continents.</p>
+                    </div>
+                </div>
+                <div class="bg-ivory/30 border border-dustgrey/60 rounded-xl p-5 space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-shadowgrey"><i class="fa-solid fa-circle-question text-tuscansun mr-1.5"></i>Key Questions This Analysis Answers</h4>
+                    <ul class="space-y-2 text-[11px] text-graphite">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-tuscansun mt-0.5 shrink-0"></i><span>Does a country's Corruption Perceptions Index correlate with its Happiness Index over time?</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-tuscansun mt-0.5 shrink-0"></i><span>Which institutional integrity indicators move together with public well-being scores?</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-tuscansun mt-0.5 shrink-0"></i><span>How did the corruption-to-happiness relationship shift across the 2015–2020 window?</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-tuscansun mt-0.5 shrink-0"></i><span>Which continents show the strongest, and weakest, governance-to-wellbeing link?</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Outcome -->
+            <div class="bg-shadowgrey text-purewhite rounded-xl p-6 flex items-start gap-4">
+                <i class="fa-solid fa-flag-checkered text-tuscansun text-xl mt-0.5"></i>
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-tuscansun mb-1">The Outcome</h4>
+                    <p class="text-[11px] text-ivory/80 leading-relaxed">An extensive global insight report highlighting policy-level conclusions and socio-economic frameworks, validating data visualization competency beyond pure commercial use cases — open the executive PDF for the full regression plots and country comparisons.</p>
+                </div>
             </div>
         </section>
+
+        <!-- COMING SOON -->
+        <section class="text-center border border-dashed border-dustgrey rounded-xl p-8">
+            <i class="fa-solid fa-layer-group text-graphite text-lg mb-2"></i>
+            <p class="text-xs text-graphite">More analytics case studies are in progress — this hub grows with each new dataset explored.</p>
+        </section>
+
     </main>
 
     <footer class="bg-shadowgrey text-purewhite py-8 text-center text-xs uppercase tracking-widest text-ivory/60">&copy; 2026 Shafira Pramatya • Data Analytics Hub</footer>
